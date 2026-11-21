@@ -1,0 +1,17 @@
+{
+    "name": "ManaChess.Application",
+    "rootNamespace": "ManaChess.Application",
+    "references": [
+        "GUID:69d8617d74230df42ae6c515ff7685da",
+        "GUID:a5f404561a9b29b45837528ebb79a4fd"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
