@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ManaChess.Core.Interface
+namespace ManaChess.Core
 {
     public interface IBoardQuery
     {

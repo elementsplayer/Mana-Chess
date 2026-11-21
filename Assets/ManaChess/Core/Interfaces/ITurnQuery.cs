@@ -1,4 +1,4 @@
-﻿namespace ManaChess.Core.Interface
+﻿namespace ManaChess.Core
 {
     public interface ITurnQuery
     {

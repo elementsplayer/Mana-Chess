@@ -9,10 +9,10 @@
         public Team CheckedTeam { get; }
         public PieceId CheckingPieceId { get; }
 
-        public CheckGiven(Team checkTeam, PieceId checkPiece)
+        public CheckGiven(Team checkedTeam, PieceId checkPieceId)
         {
-            CheckedTeam = checkTeam;
-            CheckingPieceId = checkPiece;
+            CheckedTeam = checkedTeam;
+            CheckingPieceId = checkPieceId;
         }
     }
 }
