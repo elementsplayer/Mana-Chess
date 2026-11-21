@@ -1,0 +1,20 @@
+{
+    "name": "ManaChess.Composition",
+    "rootNamespace": "ManaChess.Composition",
+    "references": [
+        "GUID:69d8617d74230df42ae6c515ff7685da",
+        "GUID:a5f404561a9b29b45837528ebb79a4fd",
+        "GUID:9769d709a9d110f43b7dcead9be7d976",
+        "GUID:5ac88e037f376d24189e098e3b7e510d",
+        "GUID:e20e8d5ef019a9f47a3209af1819c87e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

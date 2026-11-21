@@ -1,0 +1,16 @@
+{
+    "name": "ManaChess.Domain",
+    "rootNamespace": "ManaChess.Domain",
+    "references": [
+        "GUID:69d8617d74230df42ae6c515ff7685da"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": true
+}

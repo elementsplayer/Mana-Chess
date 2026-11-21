@@ -1,0 +1,17 @@
+{
+    "name": "ManaChess.Presentation",
+    "rootNamespace": "ManaChess.Presentation",
+    "references": [
+        "GUID:69d8617d74230df42ae6c515ff7685da",
+        "GUID:9769d709a9d110f43b7dcead9be7d976"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
