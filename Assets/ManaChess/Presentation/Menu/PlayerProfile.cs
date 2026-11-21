@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class PlayerProfile : MonoBehaviour
 {
     [SerializeField] GameObject mainMenuWrapper;
+    [SerializeField] PlayerDataManager playerDataManager;
 
     [SerializeField] Button modifyBtn;
     [SerializeField] TMP_InputField nameField;
@@ -13,10 +14,19 @@ public class PlayerProfile : MonoBehaviour
     Sprite modifyIcon;
     Image modifyBtnIcon;
     bool isConfirmed = false;
+    PlayerData data;
+    string localName;
 
     void Start()
     {
         modifyBtn.onClick.AddListener(SwitchModifyState);
+        nameField.onEndEdit.AddListener((text) =>
+        {
+            localName = text;
+        });
+
+        data = playerDataManager.GetData();
+        nameField.text = data.playerName;
     }
 
     public void TransitionToProfileUI()
@@ -51,5 +61,8 @@ public class PlayerProfile : MonoBehaviour
     {
         nameField.interactable = false;
         modifyBtnIcon.sprite = modifyIcon;
+        
+        data.playerName = localName;
+        playerDataManager.SaveData(data);
     }
 }
