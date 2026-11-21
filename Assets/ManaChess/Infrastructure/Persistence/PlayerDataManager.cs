@@ -8,7 +8,7 @@ public class PlayerDataManager : MonoBehaviour
 
     void Awake()
     {
-        saveFilePath = Path.Combine(Application.dataPath, "ManaChess/Application/", "playerdata.json");
+        saveFilePath = Path.Combine(Application.persistentDataPath, "playerdata.json");
         Debug.Log(saveFilePath);
         LoadData();
     }
