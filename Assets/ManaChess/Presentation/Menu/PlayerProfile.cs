@@ -10,6 +10,7 @@ public class PlayerProfile : MonoBehaviour
     [SerializeField] Button modifyBtn;
     [SerializeField] TMP_InputField nameField;
     [SerializeField] Sprite confirmIcon;
+    [SerializeField] Button returnButton;
 
     Sprite modifyIcon;
     Image modifyBtnIcon;
@@ -24,6 +25,7 @@ public class PlayerProfile : MonoBehaviour
         {
             localName = text;
         });
+        returnButton.onClick.AddListener(ReturnToMainMenu);
 
         data = playerDataManager.GetData();
         nameField.text = data.playerName;
@@ -33,6 +35,12 @@ public class PlayerProfile : MonoBehaviour
     {
         mainMenuWrapper.SetActive(false);
         gameObject.SetActive(true);
+    }
+
+    void ReturnToMainMenu()
+    {
+        mainMenuWrapper.SetActive(true);
+        gameObject.SetActive(false);
     }
 
     void SwitchModifyState()
